@@ -4,7 +4,7 @@
   "description": "Private repository for @metterbel",
   "main": "index.js",
   "scripts": {
-    "style": "sass portfolio/sass/styles.scss portfolio/styles.css",
+    "style": "sass --watch portfolio/sass/styles.scss portfolio/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
