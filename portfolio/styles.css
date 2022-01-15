@@ -132,44 +132,33 @@ a:hover {
 
 .header__navigation {
   margin: auto 0px auto auto;
-  margin-left: auto;
+  width: 500px;
   display: flex;
   align-items: stretch;
 }
 
 .navigation {
   display: flex;
+  width: 500px;
+  line-height: 50px;
+  justify-content: space-evenly;
 }
 
 .navigation__link {
   list-style: none;
-  padding: 0 15px;
   font-size: 20px;
   line-height: 50px;
+  align-items: stretch;
 }
 
 .check-language {
   color: #FFFFFF;
   width: 70px;
-  margin: auto 20px auto 15px;
+  margin: auto 20px auto 0px;
   font-size: 20px;
   line-height: 50px;
   display: flex;
-}
-
-.check-language_left {
-  flex-grow: 1;
-  text-align: left;
-}
-
-.check-language_center {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.check-language_right {
-  flex-grow: 1;
-  text-align: right;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=styles.css.map */
