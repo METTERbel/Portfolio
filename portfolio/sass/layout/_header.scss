@@ -3,17 +3,19 @@
 }
 
 .header__container {
+  height: 90px;
   background: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  height: 100%;
-  display: flex;
-  align-items: stretch;
   max-width: $content-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .header__logo {
-  margin: auto 20px;
+  margin-left: 20px;
 }
 
 .logo {
@@ -29,17 +31,12 @@
 }
 
 .header__navigation {
-  margin: auto 0px auto auto;
-  //margin-left: auto;
   width: 500px;
-  display: flex;
-  align-items: stretch;
+  margin-left: auto;
 }
 
 .navigation {
   display: flex;
-  width: 500px;
-  line-height: 50px;
   justify-content: space-evenly;
 }
 
@@ -47,15 +44,13 @@
   list-style: none;
   font-size: 20px;
   line-height: 50px;
-  align-items: stretch;
 }
 
 .check-language {
   color: $color-text;
   width: 70px;
-  margin: auto 20px auto 0px;
   font-size: 20px;
-  line-height: 50px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-between;
 }

@@ -94,10 +94,9 @@ a:hover {
 }
 
 .container {
-  /* max-width: 1440px; */
   max-width: 1440px;
   /* margin: 0 auto; */
-  margin: 0 0;
+  margin: 0;
   padding: 0 20px;
 }
 
@@ -106,17 +105,18 @@ a:hover {
 }
 
 .header__container {
+  height: 90px;
   background: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  height: 100%;
-  display: flex;
-  align-items: stretch;
   max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
-  margin: auto 20px;
+  margin-left: 20px;
 }
 
 .logo {
@@ -131,16 +131,12 @@ a:hover {
 }
 
 .header__navigation {
-  margin: auto 0px auto auto;
   width: 500px;
-  display: flex;
-  align-items: stretch;
+  margin-left: auto;
 }
 
 .navigation {
   display: flex;
-  width: 500px;
-  line-height: 50px;
   justify-content: space-evenly;
 }
 
@@ -148,15 +144,13 @@ a:hover {
   list-style: none;
   font-size: 20px;
   line-height: 50px;
-  align-items: stretch;
 }
 
 .check-language {
   color: #FFFFFF;
   width: 70px;
-  margin: auto 20px auto 0px;
   font-size: 20px;
-  line-height: 50px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-between;
 }
