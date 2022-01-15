@@ -1,6 +1,12 @@
+//Abstracts
 @import "abstracts/constants";
-@import "base/base";
-@import "layout/container";
-@import "layout/header";
 
 // Components
+
+//Base
+@import "base/base";
+@import "base/buttons";
+
+//Layout
+@import "layout/container";
+@import "layout/header";

@@ -20,16 +20,17 @@
   width: 50px;
   height: 40px;
   background-image: url("./assets/svg/logo.svg");
-  transition: 0.3s;
+  transition: $animation-time;
 }
 
 .logo:hover {
-  filter: invert(21%) sepia(12%) saturate(806%) hue-rotate(7deg) brightness(88%) contrast(84%);
+  filter: invert(21%) sepia(12%) saturate(806%) hue-rotate(7deg) brightness(88%)
+    contrast(84%);
 }
 
 .header__navigation {
- margin: auto 0px auto auto;
- margin-left:auto;
+  margin: auto 0px auto auto;
+  margin-left: auto;
   display: flex;
   align-items: stretch;
 }
@@ -49,11 +50,22 @@
   color: $color-text;
   width: 70px;
   margin: auto 20px auto 15px;
-  display: block;
-}
-
-.check-language__link {
   font-size: 20px;
   line-height: 50px;
+  display: flex;
+}
+
+.check-language_left {
   flex-grow: 1;
+  text-align: left;
+}
+
+.check-language_center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.check-language_right {
+  flex-grow: 1;
+  text-align: right;
 }

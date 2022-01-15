@@ -1,0 +1,32 @@
+.button {
+  height: 55px;
+  width: 220px;
+  font-family: 'Inter', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  border: 0;
+  box-sizing: border-box;
+  transition: $animation-time;
+  cursor: pointer;
+}
+
+.button_colored {
+  color: $color-background;
+  background-color: $color-primary;
+}
+
+.button_colored:hover {
+  color: $color-text;
+}
+
+.button_uncolored {
+  color: $color-primary;
+  background-color: $color-background;
+  border: 2px solid $color-primary;
+}
+
+.button_uncolored:hover {
+  color: $color-text;
+}
