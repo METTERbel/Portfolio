@@ -7,31 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="./assets/svg/logo.svg" alt="logo">
+    <div class="container header__container">
+      <a href="#">
+        <div class="logo"></div>
       </a>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li>Skills</li>
-          <li>Portfolio</li>
-          <li>Video</li>
-          <li>Price</li>
-          <li>Contacts</li>
+          <li class="navigation__link"><a href="#">Skills</a></li>
+          <li class="navigation__link"><a href="#">Portfolio</a></li>
+          <li class="navigation__link"><a href="#">Video</a></li>
+          <li class="navigation__link"><a href="#">Price</a></li>
+          <li class="navigation__link"><a href="#">Contacts</a></li>
         </ul>
+        <div class="check-language">
+          <a href="#" class="active-link">en</a> / <a href="#">ru</a>
+        </div>
       </nav>
-      <div class="check-language">
-        <a href="#">en</a> / <a href="#">ru</a>
-      </div>
+
     </div>
   </header>
   <main>
@@ -39,7 +40,8 @@
       <section class="section__hero">
         <div class="hero__content">
           <h1>Alexa Rise</h1>
-          <p>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+          <p>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer
+            Alexa Rise</p>
           <div class="hero__button">
             <button class="button button_colored">Hire me</button>
           </div>
@@ -47,14 +49,14 @@
       </section>
       <section class="section section__skills">
         <h2>Skills</h2>
-        <div class="skills-items">
+        <div class="loyout-4-columns">
           <!--TODO: add three items-->
           <div class="skills-item">
             <div class="skills-item__icon">
               <span class="icon-square icon-square_photo"></span>
             </div>
-              <h4 class="skills-item__title">Title-item</h4>
-              <p>Text-item</p>
+            <h4 class="skills-item__title">Title-item</h4>
+            <p>Text-item</p>
           </div>
         </div>
       </section>
