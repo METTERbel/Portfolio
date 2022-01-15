@@ -2,11 +2,12 @@
 @import "abstracts/constants";
 
 // Components
+@import "components/buttons";
 
 //Base
 @import "base/base";
-@import "base/buttons";
 
 //Layout
 @import "layout/container";
 @import "layout/header";
+@import "layout/hero"
