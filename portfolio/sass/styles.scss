@@ -1,8 +1,11 @@
 //Abstracts
 @import "abstracts/constants";
+@import "abstracts/mixin";
+@import "abstracts/placeholders";
 
 // Components
 @import "components/buttons";
+@import "components/icons";
 
 //Base
 @import "base/base";
@@ -10,4 +13,5 @@
 //Layout
 @import "layout/container";
 @import "layout/header";
-@import "layout/hero"
+@import "layout/hero";
+@import "layout/skills";

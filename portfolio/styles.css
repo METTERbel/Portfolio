@@ -1,13 +1,23 @@
+.logo {
+  transition: all 0.3s;
+}
+
+h3, h2, h1 {
+  font-family: "Merriweather", Verdana, serif;
+}
+
+.skills-item__text, .hero__text, .header, h4, body, .button {
+  font-family: "Inter", Verdana, sans-serif;
+}
+
 .button {
   height: 55px;
   width: 220px;
-  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 2rem;
+  line-height: 4rem;
   border: 0;
-  box-sizing: border-box;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -31,9 +41,42 @@
   color: #FFFFFF;
 }
 
+.skills-item__icon_camera {
+  display: block;
+  margin: 0 auto;
+  width: 62px;
+  height: 50px;
+  background-image: url("./assets/svg/camera.svg");
+}
+
+.skills-item__icon_video {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 50px;
+  background-image: url("./assets/svg/video.svg");
+}
+
+.skills-item__icon_image {
+  display: block;
+  margin: 0 auto;
+  width: 66px;
+  height: 50px;
+  background-image: url("./assets/svg/image.svg");
+}
+
+.skills-item__icon_mic {
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 50px;
+  background-image: url("./assets/svg/mic.svg");
+}
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -42,41 +85,46 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Inter", Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #000000;
 }
 
 h1 {
-  font-family: "Merriweather", Verdana, serif;
-  font-style: normal;
+  font-size: 6rem;
+  line-height: 12rem;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 120px;
+  font-style: normal;
+  color: #FFFFFF;
 }
 
 h2 {
-  font-family: "Merriweather", Verdana, serif;
-  font-style: normal;
+  font-size: 4rem;
+  line-height: 8rem;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
+  font-style: normal;
+  width: min-content;
+  display: block;
+  margin: 0 auto;
+  color: #BDAE82;
+  padding: 0 20px;
+  background-color: #000000;
 }
 
 h3 {
-  font-family: "Merriweather", Verdana, serif;
-  font-style: normal;
+  font-size: 2.8rem;
+  line-height: 5.6rem;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 56px;
+  font-style: normal;
+  color: #FFFFFF;
 }
 
 h4 {
-  font-family: "Inter", Verdana, sans-serif;
-  font-style: normal;
+  font-size: 2rem;
+  line-height: 4rem;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
+  font-style: normal;
+  color: #FFFFFF;
+  margin-top: 50px;
+  text-align: center;
 }
 
 a {
@@ -100,8 +148,25 @@ a:hover {
   padding: 0 20px;
 }
 
+.container__title {
+  width: 50%;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-image: linear-gradient(to top, #000000 39px, #BDAE82 39px, #BDAE82 41px, #000000 41px);
+}
+
+.skills__container, .portfolio__container {
+  margin-top: 100px;
+}
+
 .header {
-  height: 90px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 5rem;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .header__container {
@@ -123,7 +188,6 @@ a:hover {
   width: 50px;
   height: 40px;
   background-image: url("./assets/svg/logo.svg");
-  transition: all 0.3s;
 }
 
 .logo:hover {
@@ -142,14 +206,10 @@ a:hover {
 
 .navigation__link {
   list-style: none;
-  font-size: 20px;
-  line-height: 50px;
 }
 
 .check-language {
-  color: #FFFFFF;
   width: 70px;
-  font-size: 20px;
   margin-right: 20px;
   display: flex;
   justify-content: space-between;
@@ -157,10 +217,9 @@ a:hover {
 
 .hero {
   max-width: 1440px;
-  height: 910px;
 }
 
-.hero__section {
+.hero__container {
   background: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
@@ -170,7 +229,6 @@ a:hover {
 .hero__content {
   color: #FFFFFF;
   width: 500px;
-  height: 330px;
   margin-left: 80px;
   padding-top: 160px;
   padding-bottom: 330px;
@@ -184,15 +242,34 @@ a:hover {
   height: 120px;
   margin-top: 10px;
   display: flex;
-  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 2rem;
+  line-height: 4rem;
 }
 
 .hero__button {
   margin-top: 25px;
+}
+
+.skills-items {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.skills-item {
+  width: 320px;
+  height: 240px;
+}
+
+.skills-item__text {
+  display: block;
+  margin: 20px 20px 8px 20px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 /*# sourceMappingURL=styles.css.map */

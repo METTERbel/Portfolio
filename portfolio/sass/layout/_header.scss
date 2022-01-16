@@ -1,5 +1,10 @@
 .header {
-  height: 90px;
+  @extend %font-text;
+  color: $color-text;
+  font-size: 2.0rem;
+  line-height: 5.0rem;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .header__container {
@@ -22,7 +27,7 @@
   width: 50px;
   height: 40px;
   background-image: url("./assets/svg/logo.svg");
-  transition: $animation-time;
+  @extend %transition;
 }
 
 .logo:hover {
@@ -42,14 +47,10 @@
 
 .navigation__link {
   list-style: none;
-  font-size: 20px;
-  line-height: 50px;
 }
 
 .check-language {
-  color: $color-text;
   width: 70px;
-  font-size: 20px;
   margin-right: 20px;
   display: flex;
   justify-content: space-between;

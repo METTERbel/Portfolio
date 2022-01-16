@@ -1,9 +1,8 @@
 .hero {
   max-width: $content-width;
-  height: 910px;
 }
 
-.hero__section {
+.hero__container {
   background: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
@@ -13,7 +12,6 @@
 .hero__content {
   color: $color-text;
   width: 500px;
-  height: 330px;
   margin-left: 80px;
   padding-top: 160px;
   padding-bottom: 330px;
@@ -25,14 +23,13 @@
 .hero__text {
   width: 470px;
   height: 120px;
+  @extend %font-text;
   margin-top: 10px;
   display: flex;
- // align-content: center;
-  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
 }
 
 .hero__button {

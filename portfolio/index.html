@@ -40,7 +40,7 @@
   </header>
   <main>
     <div class="hero">
-      <section class="hero__section">
+      <section class="hero__container">
         <div class="hero__content">
           <h1>Alexa Rise</h1>
           <p class="hero__text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer
@@ -50,21 +50,38 @@
           </div>
         </div>
       </section>
-      <section class="section section__skills">
-        <h2>Skills</h2>
-        <div class="loyout-4-columns">
-          <!--TODO: add three items-->
+    </div>
+      <section class="container skills__container">
+        <div class="container__title">
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-items">
           <div class="skills-item">
-            <div class="skills-item__icon">
-              <span class="icon-square icon-square_photo"></span>
-            </div>
-            <h4 class="skills-item__title">Title-item</h4>
-            <p>Text-item</p>
+              <span class="skills-item__icon_camera"></span>
+            <h4 class="skills-item__title">Digital photography</h4>
+            <p class="skills-item__text">High-quality photos in the studio and on the nature</p>
+          </div>
+          <div class="skills-item">
+              <span class="skills-item__icon_video"></span>
+            <h4 class="skills-item__title">Video shooting</h4>
+            <p class="skills-item__text">Capture your moments so that they always stay with you</p>
+          </div>
+          <div class="skills-item">
+              <span class="skills-item__icon_image"></span>
+            <h4 class="skills-item__title">Retouch</h4>
+            <p class="skills-item__text">I strive to make photography surpass reality</p>
+          </div>
+          <div class="skills-item">
+              <span class="skills-item__icon_mic"></span>
+            <h4 class="skills-item__title">Audio</h4>
+            <p class="skills-item__text">Professional sounds recording for video, advertising, portfolio</p>
           </div>
         </div>
       </section>
-      <section class="section section__portfolio">
-        <h2>Portfolio</h2>
+      <section class="container portfolio__container">
+        <div class="container__title">
+          <h2>Portfolio</h2>
+        </div>
         <div class="portfolio-buttons">
           <button class="button button_uncolored">Winter</button>
           <button class="button button_uncolored">Spring</button>
@@ -92,14 +109,18 @@
           </div>
         </div>
       </section>
-      <section class="section section__video">
-        <h2>Video</h2>
+      <section class="container video__container">
+        <div class="container__title">
+          <h2>Video</h2>
+        </div>
         <div class="video-player">
           <div class="video-player__button"></div>
         </div>
       </section>
-      <section class="section section__price">
-        <h2>Price</h2>
+      <section class="container price__container">
+        <div class="container__title">
+          <h2>Price</h2>
+        </div>
         <div class="loyout-3-columns">
           <!--TODO: add two items -->
           <div class="price-item">
@@ -131,7 +152,6 @@
           </div>
         </div>
       </section>
-    </div>
   </main>
   <footer class="footer">
     <div class="container">
