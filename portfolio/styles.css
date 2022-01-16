@@ -157,7 +157,7 @@ a:hover {
   background-image: linear-gradient(to top, #000000 39px, #BDAE82 39px, #BDAE82 41px, #000000 41px);
 }
 
-.skills__container, .portfolio__container {
+.skills__container, .portfolio__container, .video__container {
   margin-top: 100px;
 }
 
@@ -256,6 +256,7 @@ a:hover {
   display: flex;
   margin-top: 60px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skills-item {
@@ -270,6 +271,21 @@ a:hover {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 36px;
+}
+
+.portfolio-buttons {
+  display: flex;
+  margin: 60px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
