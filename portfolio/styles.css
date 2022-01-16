@@ -73,7 +73,7 @@ h3, h2, h1 {
   background-image: url("./assets/svg/mic.svg");
 }
 
-* {
+*, section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -155,9 +155,6 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(to top, #000000 39px, #BDAE82 39px, #BDAE82 41px, #000000 41px);
-}
-
-.skills__container, .portfolio__container, .video__container {
   margin-top: 100px;
 }
 
@@ -286,6 +283,33 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 25px;
+}
+
+.portfolio-item {
+  display: block;
+  width: 450px;
+  height: 560px;
+}
+
+.video-player {
+  width: 1400px;
+  height: 705px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  background-image: url("./assets/img/video-player.jpg");
+}
+
+.video-player__button {
+  width: 130px;
+  height: 130px;
+  background-image: url("./assets/svg/play_button.svg");
+  background-repeat: no-repeat;
+}
+
+.video-player__button:hover {
+  filter: invert(21%) sepia(12%) saturate(806%) hue-rotate(7deg) brightness(88%) contrast(84%);
 }
 
 /*# sourceMappingURL=styles.css.map */
