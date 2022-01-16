@@ -1,4 +1,5 @@
-*, section {
+*,
+section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,13 +17,13 @@ body {
 
 h1 {
   @extend %font-header;
-  @include header($size: 6.0rem, $height: 12.0rem);
+  @include header($size: 6rem, $height: 12rem);
   color: $color-text;
 }
 
 h2 {
   @extend %font-header;
-  @include header($size: 4.0rem, $height: 8.0rem);
+  @include header($size: 4rem, $height: 8rem);
   width: min-content;
   display: block;
   margin: 0 auto;
@@ -39,7 +40,7 @@ h3 {
 
 h4 {
   @extend %font-text;
-  @include header($size: 2.0rem, $height: 4.0rem);
+  @include header($size: 2rem, $height: 4rem);
   color: $color-text;
   margin-top: 50px;
   text-align: center;
