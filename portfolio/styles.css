@@ -6,8 +6,22 @@
   font-family: "Merriweather", Verdana, serif;
 }
 
-.skills-item__text, .hero__text, .header, h4, body, .button {
+.contact-me__form-textarea, .contact-me__form-input, .skills-item__text, .hero__text, .header, h4, body, .button {
   font-family: "Inter", Verdana, sans-serif;
+}
+
+.contact-me__form-textarea, .contact-me__form-input {
+  display: block;
+  width: 100%;
+  color: #BDAE82;
+  background-color: #000000;
+  border: 2px solid #BDAE82;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-left: 19px;
+  margin-top: 20px;
 }
 
 .button {
@@ -156,7 +170,7 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(to top, #000000 39px, #BDAE82 39px, #BDAE82 41px, #000000 41px);
-  margin-top: 100px;
+  margin-top: 101px;
 }
 
 .header {
@@ -359,6 +373,48 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-me__container {
+  background-image: url("./assets/img/contacts_bg.jpg");
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  max-width: 1440px;
+  padding-top: 59px;
+  padding-right: 20px;
+  padding-bottom: 196px;
+  text-align: left;
+}
+
+.contact-me__content {
+  width: 450px;
+  height: 445px;
+  margin-left: auto;
+}
+
+.contact-me__title {
+  background: none;
+  width: auto;
+  margin: 0;
+  padding-left: 0;
+}
+
+.contact-me__form {
+  display: block;
+  margin-top: 40px;
+}
+
+.contact-me__form-input {
+  height: 50px;
+}
+
+.contact-me__form-textarea {
+  height: 100px;
+  padding-top: 12px;
+}
+
+.contact-me__button {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
