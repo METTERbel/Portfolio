@@ -1,4 +1,4 @@
-@mixin header ($size, $height, $weight: bold, $style: normal) {
+@mixin header($size, $height, $weight: bold, $style: normal) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;

@@ -4,8 +4,8 @@
   @extend %font-text;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.0rem;
-  line-height: 4.0rem;
+  font-size: 2rem;
+  line-height: 4rem;
   border: 0;
   transition: $animation-time;
   cursor: pointer;
@@ -20,6 +20,11 @@
   color: $color-text;
 }
 
+.button_colored:active {
+  border: 2px solid $color-background;
+  transition: $animation-time-short;
+}
+
 .button_uncolored {
   color: $color-primary;
   background-color: $color-background;
@@ -28,4 +33,9 @@
 
 .button_uncolored:hover {
   color: $color-text;
+}
+
+.button_uncolored:active {
+  border: 4px solid $color-primary;
+  transition: $animation-time-short;
 }

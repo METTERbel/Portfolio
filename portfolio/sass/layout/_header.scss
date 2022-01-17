@@ -1,8 +1,8 @@
 .header {
   @extend %font-text;
   color: $color-text;
-  font-size: 2.0rem;
-  line-height: 5.0rem;
+  font-size: 2rem;
+  line-height: 5rem;
   font-style: normal;
   font-weight: normal;
 }
@@ -12,18 +12,17 @@
   background: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  max-width: $content-width;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .header__logo {
-  margin-left: 20px;
+  display: block;
 }
 
 .logo {
+  display: block;
   width: 50px;
   height: 40px;
   background-image: url("./assets/svg/logo.svg");
@@ -51,7 +50,6 @@
 
 .check-language {
   width: 70px;
-  margin-right: 20px;
   display: flex;
   justify-content: space-between;
 }

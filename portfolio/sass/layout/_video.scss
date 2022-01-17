@@ -9,13 +9,22 @@
 }
 
 .video-player__button {
+  display: block;
+  border: 0;
+  background: none;
   width: 130px;
   height: 130px;
   background-image: url("./assets/svg/play_button.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .video-player__button:hover {
   filter: invert(21%) sepia(12%) saturate(806%) hue-rotate(7deg) brightness(88%)
     contrast(84%);
+}
+
+.video-player__button:active {
+  filter: invert(0%);
+  transition: $animation-time-short;
 }

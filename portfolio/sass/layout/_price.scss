@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-top: 59px;
   gap: 25px;
 }
 
@@ -11,11 +11,11 @@
   width: 450px;
   height: 505px;
   background-color: $color-background;
-  border: 2px solid $color-primary;
+  border: 3px solid $color-primary;
 }
 
 .price-item__title {
-  margin-top: 43px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -25,6 +25,8 @@
   font-size: 24px;
   line-height: 48px;
   @extend %font-header;
+  font-style: normal;
+  font-weight: bold;
   text-align: center;
 }
 
