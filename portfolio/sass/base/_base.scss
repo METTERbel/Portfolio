@@ -1,0 +1,62 @@
+*,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  @extend %font-text;
+  background-color: $color-background;
+}
+
+h1 {
+  @extend %font-header;
+  @include header($size: 6rem, $height: 12rem);
+  color: $color-text;
+}
+
+h2 {
+  @extend %font-header;
+  @include header($size: 4rem, $height: 8rem);
+  width: min-content;
+  display: block;
+  margin: 0 auto;
+  color: $color-primary;
+  padding: 0 20px;
+  background-color: $color-background;
+}
+
+h3 {
+  @extend %font-header;
+  @include header($size: 2.8rem, $height: 5.6rem);
+  color: $color-text;
+}
+
+h4 {
+  @extend %font-text;
+  @include header($size: 2rem, $height: 4rem);
+  color: $color-text;
+  margin-top: 50px;
+  text-align: center;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: $color-primary;
+}
+
+.active-link {
+  color: $color-primary;
+}

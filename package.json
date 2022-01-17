@@ -1,0 +1,20 @@
+{
+  "name": "metterbel-jsfepreschool",
+  "version": "1.0.0",
+  "description": "Private repository for @metterbel",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch portfolio/sass/styles.scss portfolio/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/metterbel-JSFEPRESCHOOL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/metterbel-JSFEPRESCHOOL/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/metterbel-JSFEPRESCHOOL#readme"
+}

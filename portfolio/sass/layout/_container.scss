@@ -1,0 +1,17 @@
+.container {
+  //max-width: $content-width;
+  width: $content-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container__title {
+  width: 50%;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-image: linear-gradient(to top, $color-background 39px, $color-primary 39px, $color-primary 41px, $color-background 41px);
+  margin-top: 101px;
+}
+

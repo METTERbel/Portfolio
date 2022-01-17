@@ -1,0 +1,44 @@
+.contact-me__container {
+  background-image: url('./assets/img/contacts_bg.jpg');
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding-top: 59px;
+  padding-right: 20px;
+  padding-bottom: 195px;
+  text-align: left;
+}
+
+.contact-me__content {
+  width: 450px;
+  height: 445px;
+  margin-left: auto;
+}
+
+.contact-me__title {
+  background: none;
+  width: auto;
+  margin: 0;
+  padding-left: 0;
+}
+
+.contact-me__form {
+  display: block;
+  margin-top: 40px;
+}
+
+.contact-me__form-input {
+  @extend %font-text;
+  @extend %form-text;
+  height: 50px;
+}
+
+.contact-me__form-textarea {
+  @extend %font-text;
+  @extend %form-text;
+  height: 100px;
+  padding-top: 12px;
+}
+
+.contact-me__button {
+  margin-top: 30px;
+}

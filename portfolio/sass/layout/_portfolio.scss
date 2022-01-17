@@ -1,0 +1,20 @@
+.portfolio-buttons {
+  display: flex;
+  margin: 60px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.portfolio-item {
+  display: block;
+  width: 450px;
+  height: 560px;
+}
