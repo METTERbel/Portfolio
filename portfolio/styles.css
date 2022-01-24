@@ -663,20 +663,49 @@ a:hover {
   font-weight: normal;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+    margin-top: 28px;
+    text-align: center;
+  }
+}
 
 .footer__left {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .footer__left {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 170px;
+  }
+}
 
 .footer__title {
   margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .footer__title {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 16px;
+  }
 }
 
 .footer__icons {
   display: flex;
   gap: 20px;
   list-style: none;
+}
+@media (max-width: 768px) {
+  .footer__icons {
+    margin-top: 30px;
+    justify-content: center;
+  }
 }
 
 .footer__icons_instagram {
