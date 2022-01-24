@@ -50,7 +50,7 @@
   @include media-tablet {
   //display: none;
   display: block;
-  position: absolute;
+  position: fixed;
   height: 100%;
   right: -500px;
   transition: 0.5s all linear;
@@ -69,7 +69,7 @@
   padding-top: 134px;
   top: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   background-color: $color-background;
   z-index: 50;
   transition: 0.5s all linear;
