@@ -3,6 +3,10 @@
   width: $content-width;
   margin: 0 auto;
   padding: 0 20px;
+  @include media-tablet {
+    padding: 0 60px;
+    max-width: $tablet-width;
+  }
 }
 
 .container__title {
@@ -13,5 +17,9 @@
   text-align: center;
   background-image: linear-gradient(to top, $color-background 39px, $color-primary 39px, $color-primary 41px, $color-background 41px);
   margin-top: 101px;
+  @include media-tablet {
+    width: 364px;
+    margin-top: -10px;
+  }
 }
 

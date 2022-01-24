@@ -1,3 +1,12 @@
+.video__container {
+  @include media-tablet {
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+}
+
 .video-player {
   width: 1400px;
   height: 705px;
@@ -6,6 +15,14 @@
   align-items: center;
   margin-top: 60px;
   background-image: url("./assets/img/video-player.jpg");
+  background-repeat: no-repeat;
+  @include media-tablet {
+    margin-top: 49px;
+    max-width: $tablet-width;
+    height: 418px;
+    background-size: 108%;
+    background-position: left;
+  }
 }
 
 .video-player__button {
@@ -17,6 +34,11 @@
   background-image: url("./assets/svg/play_button.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+  @include media-tablet {
+    width: 65px;
+    height: 65px;
+    background-size: 65px 65px;
+  }
 }
 
 .video-player__button:hover {

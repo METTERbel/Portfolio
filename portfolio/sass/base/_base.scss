@@ -20,6 +20,9 @@ h1 {
   @extend %font-header;
   @include header($size: 6rem, $height: 12rem);
   color: $color-text;
+  @include media-tablet {
+    @include header($size: 3.2rem, $height: 6.4rem, $weight: normal);
+  }
 }
 
 h2 {
@@ -31,6 +34,9 @@ h2 {
   color: $color-primary;
   padding: 0 20px;
   background-color: $color-background;
+  @include media-tablet {
+    @include header($size: 3.2rem, $height: 8.0rem);
+  }
 }
 
 h3 {
@@ -45,6 +51,9 @@ h4 {
   color: $color-text;
   margin-top: 50px;
   text-align: center;
+  @include media-tablet {
+    margin-top: 30px;
+  }
 }
 
 a {
