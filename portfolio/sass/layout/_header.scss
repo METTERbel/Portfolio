@@ -48,7 +48,12 @@
   display: flex;
   justify-content: space-evenly;
   @include media-tablet {
-  display: none;
+  //display: none;
+  display: block;
+  position: absolute;
+  height: 100%;
+  right: -500px;
+  transition: 0.5s all linear;
   }
 }
 

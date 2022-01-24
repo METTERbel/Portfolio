@@ -329,7 +329,11 @@ a:hover {
 }
 @media (max-width: 768px) {
   .navigation {
-    display: none;
+    display: block;
+    position: absolute;
+    height: 100%;
+    right: -500px;
+    transition: 0.5s all linear;
   }
 }
 
