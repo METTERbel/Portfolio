@@ -9,33 +9,27 @@
   border: 0;
   transition: $animation-time;
   cursor: pointer;
-}
-
-.button_colored {
-  color: $color-background;
-  background-color: $color-primary;
-}
-
-.button_colored:hover {
-  color: $color-text;
-}
-
-.button_colored:active {
-  border: 2px solid $color-background;
-  transition: $animation-time-short;
-}
-
-.button_uncolored {
-  color: $color-primary;
-  background-color: $color-background;
-  border: 2px solid $color-primary;
-}
-
-.button_uncolored:hover {
-  color: $color-text;
-}
-
-.button_uncolored:active {
-  border: 4px solid $color-primary;
-  transition: $animation-time-short;
+  &_colored {
+    color: $color-background;
+    background-color: $color-primary;
+    &:hover {
+      color: $color-text;
+    }
+    &:active {
+      border: 2px solid $color-background;
+      transition: $animation-time-short;
+    }
+  }
+  &_uncolored {
+    color: $color-primary;
+    background-color: $color-background;
+    border: 2px solid $color-primary;
+    &:hover {
+      color: $color-text;
+    }
+    &:active {
+      border: 4px solid $color-primary;
+      transition: $animation-time-short;
+    }
+  }
 }

@@ -8,21 +8,42 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  @include media-tablet {
+    display: block;
+    margin-top: 28px;
+    text-align: center;
+  }
 }
 
 .footer__left {
   display: flex;
   gap: 20px;
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 170px;
+  }
 }
 
 .footer__title {
   margin-left: 20px;
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 16px;
+  }
 }
 
 .footer__icons {
   display: flex;
   gap: 20px;
   list-style: none;
+  @include media-tablet {
+    margin-top: 30px;
+    justify-content: center;
+  }
 }
 
 .footer__icons_instagram {

@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   margin-top: 59px;
   gap: 25px;
+  @include media-tablet {
+    margin-top: 51px;
+    margin-bottom: -45px;
+  }
 }
 
 .price-item {
@@ -12,6 +16,11 @@
   height: 505px;
   background-color: $color-background;
   border: 3px solid $color-primary;
+  @include media-tablet {
+    margin: 0 auto;
+    width: 420px;
+    margin-bottom: 25px;
+  }
 }
 
 .price-item__title {
