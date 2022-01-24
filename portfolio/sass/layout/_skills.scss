@@ -3,11 +3,20 @@
   margin-top: 60px;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  @include media-tablet {
+    margin-top: 45px;
+    margin-bottom: 95px;
+  }
 }
 
 .skills-item {
   width: 320px;
   height: 240px;
+  @include media-tablet {
+    width: 300px;
+    height: 260px;
+  }
 }
 
 .skills-item__text {
@@ -18,4 +27,9 @@
   @extend %font-text;
   font-size: 18px;
   line-height: 36px;
+  @include media-tablet {
+    margin: 20px auto;
+    line-height: 22px;
+    width: 280px;
+  }
 }

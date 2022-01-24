@@ -4,6 +4,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
+    @include media-tablet {
+      margin: 50px auto 60px auto;
+  }
 }
 
 .portfolio-items {
@@ -17,4 +20,7 @@
   display: block;
   width: 450px;
   height: 560px;
+  @include media-tablet {
+    margin: 0 auto;
+  }
 }
