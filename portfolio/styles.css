@@ -111,31 +111,25 @@ a:hover {
   transition: all 0.3s;
   cursor: pointer;
 }
-
 .button_colored {
   color: #000000;
   background-color: #bdae82;
 }
-
 .button_colored:hover {
   color: #ffffff;
 }
-
 .button_colored:active {
   border: 2px solid #000000;
   transition: all 0.1s;
 }
-
 .button_uncolored {
   color: #bdae82;
   background-color: #000000;
   border: 2px solid #bdae82;
 }
-
 .button_uncolored:hover {
   color: #ffffff;
 }
-
 .button_uncolored:active {
   border: 4px solid #bdae82;
   transition: all 0.1s;
