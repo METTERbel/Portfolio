@@ -17,3 +17,42 @@
   height: 3px;
   width: 100%;
 }
+
+.header__navigation_close {
+  @include media-tablet {
+    display: none;
+    z-index: 200;
+  }
+}
+
+.header__navigation_close.active {
+  @include media-tablet {
+    display: block;
+    top: 20px;
+    right: 64px;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    position: absolute;
+    z-index: 100;
+    transition: 0.5s all;
+  }
+}
+
+.close-line {
+  @include media-tablet {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+  }
+}
+.close-line:first-child {
+transform: translateY(-50%) rotate(45deg);
+}
+.close-line:last-child {
+transform: translateY(-50%) rotate(-45deg);
+}
+

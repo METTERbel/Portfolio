@@ -1,3 +1,22 @@
+let hamburger = document.querySelector('.hamburger');
+let navMenu = document.querySelector('.navigation');
+let closeLine = document.querySelector('.header__navigation_close');
+hamburger.addEventListener('click', mobileMenu);
+
+function mobileMenu() {
+  navMenu.classList.toggle('active');
+  closeLine.classList.toggle('active');
+}
+closeLine.addEventListener('click', closeMenu);
+
+function closeMenu() {
+  closeLine.classList.toggle('active');
+  navMenu.classList.remove('active');
+}
+
+
+
+
 console.log(`Самооценка по пунктам:  \n
 + 1.Вёрстка валидная +10 \n
 + 2.Вёрстка семантическая +20 \n

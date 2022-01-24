@@ -42,18 +42,41 @@
 .header__navigation {
   width: 500px;
   margin-left: auto;
-  @include media-tablet {
-    display: none;
-  }
 }
 
 .navigation {
   display: flex;
   justify-content: space-evenly;
+  @include media-tablet {
+  display: none;
+  }
+}
+
+.navigation.active {
+  @include media-tablet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  height: 100%;
+  width: 620px;
+  padding-left: 127px;
+  padding-top: 134px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: $color-background;
+  z-index: 50;
+  transition: 0.5s all linear;
+  }
 }
 
 .navigation__link {
   list-style: none;
+  @include media-tablet {
+    line-height: 7.3rem;
+    font-size: 35px;
+  }
 }
 
 .check-language {
