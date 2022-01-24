@@ -18,7 +18,6 @@
   background-image: linear-gradient(to top, $color-background 39px, $color-primary 39px, $color-primary 41px, $color-background 41px);
   margin-top: 101px;
   @include media-tablet {
-    //margin-top: 10px;
     width: 364px;
     margin-top: -10px;
   }

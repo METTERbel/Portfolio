@@ -6,12 +6,22 @@
   padding-right: 20px;
   padding-bottom: 195px;
   text-align: left;
+  @include media-tablet {
+    width: 768px;
+    height: 600px;
+    padding: 0;
+    background-size: 160%;
+    background-position: center;
+  }
 }
 
 .contact-me__content {
   width: 450px;
   height: 445px;
   margin-left: auto;
+  @include media-tablet {
+    margin: 0 auto;
+  }
 }
 
 .contact-me__title {
@@ -19,26 +29,47 @@
   width: auto;
   margin: 0;
   padding-left: 0;
+  @include media-tablet {
+    margin: 0 auto;
+    padding: 0px;
+    padding-top: 51px;
+    text-align: center;
+  }
 }
 
 .contact-me__form {
   display: block;
   margin-top: 40px;
+  @include media-tablet {
+    margin: 0 auto;
+    padding-top: 13px;
+  }
 }
 
 .contact-me__form-input {
   @extend %font-text;
   @extend %form-text;
   height: 50px;
+  @include media-tablet {
+    background-color: rgba(0,0,0,0.5);
+  }
 }
+
 
 .contact-me__form-textarea {
   @extend %font-text;
   @extend %form-text;
   height: 100px;
   padding-top: 12px;
+  @include media-tablet {
+    background-color: rgba(0,0,0,0.5);
+  }
 }
 
 .contact-me__button {
   margin-top: 30px;
+  @include media-tablet {
+    margin: 30px auto;
+    text-align: center;
+  }
 }
