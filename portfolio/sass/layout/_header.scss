@@ -15,6 +15,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    background-position: -5px -30px;
+    background-size: auto 620px;
+    max-width: $tablet-width;
+  }
 }
 
 .header__logo {
@@ -37,6 +42,9 @@
 .header__navigation {
   width: 500px;
   margin-left: auto;
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .navigation {
@@ -52,4 +60,12 @@
   width: 70px;
   display: flex;
   justify-content: space-between;
+  @include media-tablet {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 80px;
+    &:first-child {
+      margin-right: -10px;
+    }
+  }
 }
