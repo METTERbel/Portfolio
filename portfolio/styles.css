@@ -123,16 +123,19 @@ a:hover {
 
 .hamburger {
   display: none;
-  width: 50px;
-  height: 50px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 11px 0;
-  margin-right: 4px;
 }
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    padding: 11px 0;
+    position: fixed;
+    right: 64px;
   }
 }
 
@@ -141,46 +144,20 @@ a:hover {
   background-color: #ffffff;
   height: 3px;
   width: 100%;
+  z-index: 100;
+  transition: all 0.5s;
 }
 
-@media (max-width: 768px) {
-  .header__navigation_close {
-    display: none;
-    z-index: 200;
-  }
+.hamburger.close .line1 {
+  transform: rotate(-45deg) translate(-6px, 12px);
 }
 
-@media (max-width: 768px) {
-  .header__navigation_close.active {
-    display: block;
-    top: 20px;
-    right: 64px;
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    position: fixed;
-    z-index: 100;
-    transition: 0.5s all;
-  }
+.hamburger.close .line2 {
+  opacity: 0;
 }
 
-@media (max-width: 768px) {
-  .close-line {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-  }
-}
-
-.close-line:first-child {
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.close-line:last-child {
-  transform: translateY(-50%) rotate(-45deg);
+.hamburger.close .line3 {
+  transform: rotate(45deg) translate(-6px, -12px);
 }
 
 .button {
@@ -322,6 +299,12 @@ a:hover {
   width: 500px;
   margin-left: auto;
 }
+@media (max-width: 768px) {
+  .header__navigation {
+    width: 200px;
+    margin: 0px;
+  }
+}
 
 .navigation {
   display: flex;
@@ -333,12 +316,12 @@ a:hover {
     position: fixed;
     height: 100%;
     right: -500px;
-    transition: 0.5s all linear;
+    transition: 0.5s all;
   }
 }
 
 @media (max-width: 768px) {
-  .navigation.active {
+  .navigation.show {
     display: flex;
     align-items: flex-start;
     justify-content: left;
@@ -352,7 +335,7 @@ a:hover {
     position: fixed;
     background-color: #000000;
     z-index: 50;
-    transition: 0.5s all linear;
+    transition: 0.5s all;
   }
 }
 
@@ -374,7 +357,7 @@ a:hover {
 @media (max-width: 768px) {
   .check-language {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 84px;
     width: 80px;
   }
   .check-language:first-child {
