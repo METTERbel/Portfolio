@@ -42,22 +42,26 @@
 .header__navigation {
   width: 500px;
   margin-left: auto;
+  @include media-tablet {
+    width: 200px;
+    margin: 0px;
+  }
+
 }
 
 .navigation {
   display: flex;
   justify-content: space-evenly;
   @include media-tablet {
-  //display: none;
   display: block;
   position: fixed;
   height: 100%;
   right: -500px;
-  transition: 0.5s all linear;
+  transition: 0.5s all;
   }
 }
 
-.navigation.active {
+.navigation.show {
   @include media-tablet {
   display: flex;
   align-items: flex-start;
@@ -72,7 +76,7 @@
   position: fixed;
   background-color: $color-background;
   z-index: 50;
-  transition: 0.5s all linear;
+  transition: 0.5s all;
   }
 }
 
@@ -90,7 +94,7 @@
   justify-content: space-between;
   @include media-tablet {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 84px;
     width: 80px;
     &:first-child {
       margin-right: -10px;

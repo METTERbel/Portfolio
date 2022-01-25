@@ -1,19 +1,15 @@
-let hamburger = document.querySelector('.hamburger');
-let navMenu = document.querySelector('.navigation');
-let closeLine = document.querySelector('.header__navigation_close');
-hamburger.addEventListener('click', mobileMenu);
+const hamburger = document.querySelector('.hamburger');
+const navTablet = document.querySelector('.navigation');
+const navLink = document.querySelectorAll('.navigation__link');
 
-function mobileMenu() {
-  navMenu.classList.toggle('active');
-  closeLine.classList.toggle('active');
+function toggleMenu() {
+  hamburger.classList.toggle('close');
+  navTablet.classList.toggle('show');
 }
-closeLine.addEventListener('click', closeMenu);
-
-function closeMenu() {
-  closeLine.classList.toggle('active');
-  navMenu.classList.remove('active');
+hamburger.addEventListener('click', toggleMenu);
+for (let i = 0; i < navLink.length; i++) {
+  navLink[i].addEventListener('click', toggleMenu);
 }
-
 
 console.log(`Самооценка по пунктам:  \n
 + Вёрстка соответствует макету. Ширина экрана 768px +48 \n
