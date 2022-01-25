@@ -339,6 +339,11 @@ a:hover {
     transition: 0.5s all;
   }
 }
+@media (max-width: 620px) {
+  .navigation.show {
+    width: 100%;
+  }
+}
 
 .navigation__link {
   list-style: none;
