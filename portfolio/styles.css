@@ -357,11 +357,11 @@ a:hover {
 @media (max-width: 768px) {
   .check-language {
     margin-left: auto;
-    margin-right: 84px;
+    margin-right: 75px;
     width: 80px;
   }
-  .check-language:first-child {
-    margin-right: -10px;
+  .check-language:first-child a {
+    padding-right: 30px;
   }
 }
 
