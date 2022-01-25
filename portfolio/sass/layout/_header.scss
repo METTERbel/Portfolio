@@ -79,6 +79,9 @@
   z-index: 50;
   transition: 0.5s all;
   }
+  @include media-mobile {
+    width: 100%;
+  }
 }
 
 .navigation__link {
