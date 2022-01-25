@@ -79,7 +79,7 @@
   z-index: 50;
   transition: 0.5s all;
   }
-  @include media-mobile {
+  @media (max-width: 620px){
     width: 100%;
   }
 }
