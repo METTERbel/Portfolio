@@ -33,3 +33,38 @@
     }
   }
 }
+
+.portfolio-button {
+  height: 55px;
+  width: 220px;
+  @extend %font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 4rem;
+  border: 0;
+  transition: $animation-time;
+  cursor: pointer;
+  color: $color-primary;
+  background-color: $color-background;
+  border: 2px solid $color-primary;
+  &:hover {
+    color: $color-text;
+  }
+  &:active {
+    border: 4px solid $color-primary;
+    transition: $animation-time-short;
+  }
+}
+
+.portfolio-button.active {
+  color: $color-background;
+    background-color: $color-primary;
+    &:hover {
+      color: $color-text;
+    }
+    &:active {
+      border: 2px solid $color-background;
+      transition: $animation-time-short;
+    }
+}

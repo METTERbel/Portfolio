@@ -7,30 +7,32 @@ function toggleMenu() {
   navTablet.classList.toggle('show');
 }
 hamburger.addEventListener('click', toggleMenu);
-for (let i = 0; i < navLink.length; i++) {
+  for (let i = 0; i < navLink.length; i++) {
   navLink[i].addEventListener('click', toggleMenu);
 }
 
+const portfolioBtn = document.querySelector('.portfolio-buttons');
+const portfolioImages = document.querySelectorAll('.portfolio-item');
+
+const portfolioChanges = (x) => {
+  document.querySelectorAll('.portfolio-button').forEach(button => button.classList.remove('active'));
+  x.target.classList.add('active');
+
+  const season = x.target.dataset.season;
+  if (season == 'autumn') {
+    portfolioImages.forEach((x,i)=>x.src=`./assets/img/autumn/${i+1}.jpg`);
+  } else if (season == 'winter') {
+    portfolioImages.forEach((x,i)=>x.src=`./assets/img/winter/${i+1}.jpg`);
+  } else if (season == 'spring') {
+    portfolioImages.forEach((x,i)=>x.src=`./assets/img/spring/${i+1}.jpg`);
+  } else {
+    portfolioImages.forEach((x,i)=>x.src=`./assets/img/summer/${i+1}.jpg`);
+  }
+}
+
+portfolioBtn.addEventListener('click', portfolioChanges);
+
+
 console.log(`Самооценка по пунктам:  \n
-+ Вёрстка соответствует макету. Ширина экрана 768px +48 \n
-+ блок header +6 \n
-+ секция hero +6 \n
-+ секция skills +6 \n
-+ секция portfolio +6 \n
-+ секция video +6 \n
-+ секция price +6 \n
-+ секция contacts +6 \n
-+ блок <footer> +6v
-+ 2. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15 \n
-+ нет полосы прокрутки при ширине страницы от 1440рх до 768рх +5 \n
-+ нет полосы прокрутки при ширине страницы от 768рх до 480рх +5 \n
-+ нет полосы прокрутки при ширине страницы от 480рх до 320рх +5 \n
-3. На ширине экрана 768рх и меньше реализовано адаптивное меню +22 \n
-+ при ширине страницы 768рх панель навигации скрывается, появляется бургер-иконка +2 \n
-+ при нажатии на бургер-иконку справа плавно появляется адаптивное меню, бургер-иконка изменяется на крестик +4 \n
-+ высота адаптивного меню занимает всю высоту экрана. При ширине экрана 768-620рх вёрстка меню соответствует макету, когда экран становится уже, меню занимает всю ширину экрана +4 \n
-+ при нажатии на крестик адаптивное меню плавно скрывается уезжая за правую часть экрана, крестик превращается в бургер-иконку +4 \n
-+ бургер-иконка, которая при клике превращается в крестик, создана при помощи css-анимаций без использования изображений +2 \n
-+ ссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям +2 \n
-+ при клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, крестик превращается в бургер-иконку +4 \n
+Смена изображений в секции portfolio +25
 `);
