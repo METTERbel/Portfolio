@@ -6,7 +6,7 @@
   font-family: "Merriweather", Verdana, serif;
 }
 
-.footer, .contact-me__form-textarea, .contact-me__form-input, .skills-item__text, .hero__text, .header, .button, h4, body {
+.footer, .contact-me__form-textarea, .contact-me__form-input, .skills-item__text, .hero__text, .header, .portfolio-button, .button, h4, body {
   font-family: "Inter", Verdana, sans-serif;
 }
 
@@ -192,6 +192,40 @@ a:hover {
 }
 .button_uncolored:active {
   border: 4px solid #bdae82;
+  transition: all 0.1s;
+}
+
+.portfolio-button {
+  height: 55px;
+  width: 220px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 4rem;
+  border: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: #bdae82;
+  background-color: #000000;
+  border: 2px solid #bdae82;
+}
+.portfolio-button:hover {
+  color: #ffffff;
+}
+.portfolio-button:active {
+  border: 4px solid #bdae82;
+  transition: all 0.1s;
+}
+
+.portfolio-button.active {
+  color: #000000;
+  background-color: #bdae82;
+}
+.portfolio-button.active:hover {
+  color: #ffffff;
+}
+.portfolio-button.active:active {
+  border: 2px solid #000000;
   transition: all 0.1s;
 }
 
