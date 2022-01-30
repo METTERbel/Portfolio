@@ -7,7 +7,7 @@
   padding-bottom: 195px;
   text-align: left;
   @include media-tablet {
-    width: 768px;
+    max-width: 768px;
     height: 600px;
     padding: 0;
     background-size: 160%;
@@ -16,7 +16,7 @@
 }
 
 .contact-me__content {
-  width: 450px;
+  max-width: 450px;
   height: 445px;
   margin-left: auto;
   @include media-tablet {

@@ -228,7 +228,7 @@ a:hover {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -387,7 +387,7 @@ a:hover {
 
 .hero__content {
   color: #ffffff;
-  width: 500px;
+  max-width: 500px;
   margin-left: 60px;
   padding-top: 160px;
   padding-bottom: 330px;
@@ -403,7 +403,7 @@ a:hover {
 }
 
 .hero__text {
-  width: 470px;
+  max-width: 470px;
   height: 120px;
   margin-top: 10px;
   display: flex;
@@ -416,7 +416,7 @@ a:hover {
   .hero__text {
     line-height: 2.4rem;
     margin-top: 20px;
-    width: 390px;
+    max-width: 390px;
     height: 72px;
   }
 }
@@ -433,12 +433,13 @@ a:hover {
 .skills-items {
   display: flex;
   margin-top: 60px;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
 @media (max-width: 768px) {
   .skills-items {
+    max-width: 768px;
     margin-top: 45px;
     margin-bottom: 93px;
   }
@@ -452,6 +453,7 @@ a:hover {
   .skills-item {
     width: 300px;
     height: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -486,7 +488,7 @@ a:hover {
 
 .portfolio-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 }
@@ -498,7 +500,7 @@ a:hover {
 
 .portfolio-item {
   display: block;
-  width: 450px;
+  max-width: 450px;
   height: 560px;
 }
 @media (max-width: 768px) {
@@ -517,7 +519,7 @@ a:hover {
 }
 
 .video-player {
-  width: 1400px;
+  max-width: 1400px;
   height: 705px;
   display: flex;
   justify-content: center;
@@ -565,7 +567,7 @@ a:hover {
 
 .price-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 59px;
   gap: 25px;
@@ -579,7 +581,7 @@ a:hover {
 
 .price-item {
   display: block;
-  width: 450px;
+  max-width: 450px;
   height: 505px;
   background-color: #000000;
   border: 3px solid #bdae82;
@@ -637,7 +639,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .contact-me__container {
-    width: 768px;
+    max-width: 768px;
     height: 600px;
     padding: 0;
     background-size: 160%;
@@ -646,7 +648,7 @@ a:hover {
 }
 
 .contact-me__content {
-  width: 450px;
+  max-width: 450px;
   height: 445px;
   margin-left: auto;
 }
