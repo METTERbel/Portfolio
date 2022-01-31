@@ -405,6 +405,10 @@ a:hover {
   }
 }
 
+.language-item.active {
+  color: #bdae82;
+}
+
 .hero__container {
   background: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
